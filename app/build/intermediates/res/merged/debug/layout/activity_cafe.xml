@@ -15,8 +15,8 @@
         android:layout_below="@+id/login_title"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="75dp"
         android:background="#fff"
         android:elevation="4dp"
         android:orientation="vertical"
@@ -31,6 +31,56 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/CafeStartDate"
+                    android:textStyle = "bold"
+                    android:textSize = "25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.95"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/ImportText"
+                    android:singleLine="true"
+                    android:hint="Start" />
+                <ImageButton
+                    android:id="@+id/CafeSetStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_my_calendar" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <TextView
+                    android:textStyle = "bold"
+                    android:textSize = "25dp"
+                    android:id="@+id/CafeEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.95"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/ImportText"
+                    android:singleLine="true"
+                    android:hint="End" />
+
+                <ImageButton
+                    android:id="@+id/CafeSetEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_my_calendar" />
+            </LinearLayout>
+
 
             <android.support.design.widget.TextInputLayout
 

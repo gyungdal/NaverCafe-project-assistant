@@ -124,11 +124,12 @@ public class process_login extends AppCompatActivity {
         public void onReceivedError(WebView view, int errorCode,
                                     String description, String failingUrl) {
             super.onReceivedError(view, errorCode, description, failingUrl);
+            dialog.dismiss();
+            web.setVisibility(View.VISIBLE);
             Log.e(TAG, "ERROR CODE : " + errorCode);
             Log.e(TAG, description);
         }
 
-        @TargetApi(Build.VERSION_CODES.KITKAT)
         @Override
         public void onPageFinished(WebView v, String url){
             String Script = "var id = document.getElementById(\"id\");id.value = \"" + ID + "\";" +
@@ -138,7 +139,9 @@ public class process_login extends AppCompatActivity {
                     "for (var i=0;i<button.length; i++) {\n" +
                     "    button[i].click();\n" +
                     "};";
-            v.evaluateJavascript(Script, null);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                v.evaluateJavascript(Script, null);
+            }
 
         }
     }

@@ -31,12 +31,13 @@ public class NoticeBoardParsing extends AsyncTask<String, Void, Void> {
     private static final String TAG = NoticeBoardParsing.class.getName();
     private static final String SEARCH_FRONT = "http://m.cafe.naver.com/ArticleSearchList.nhn?search.query=";
     private static final String SEARCH_BACK = "&search.menuid=&search.searchBy=0&search.sortBy=sim&search.clubid=27874272&search.page=";
-
     private View view;
-    public NoticeBoardParsing(View view){
+    private Date start, end;
+    public NoticeBoardParsing(View view, Date start, Date end){
         this.view = view;
+        this.start = start;
+        this.end = end;
     }
-
     @Override
     protected Void doInBackground(String... params) {
         int i = 0;
@@ -83,11 +84,11 @@ public class NoticeBoardParsing extends AsyncTask<String, Void, Void> {
                                  continue;
                         }
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                            ArticleParsing articleParsing = new ArticleParsing(view);
+                            ArticleParsing articleParsing = new ArticleParsing(view, start, end);
                             articleParsing.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,
                                     article.attr("href").toString(), path);
                         } else {
-                            ArticleParsing articleParsing = new ArticleParsing(view);
+                            ArticleParsing articleParsing = new ArticleParsing(view, start, end);
                             articleParsing.execute(article.attr("href").toString(), path);
                         }
                 }

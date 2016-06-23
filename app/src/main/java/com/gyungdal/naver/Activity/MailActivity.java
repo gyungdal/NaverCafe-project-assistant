@@ -203,8 +203,7 @@ public class MailActivity extends AppCompatActivity implements View.OnClickListe
             String msg = String.format("%d / %d / %d", year, hourOfDay, minute);
             Snackbar.make(getCurrentFocus(), msg, Snackbar.LENGTH_INDEFINITE).show();
         }
-    }
-            ;
+    };
     @Override
     @Deprecated
     protected Dialog onCreateDialog(int id) {
@@ -223,7 +222,7 @@ public class MailActivity extends AppCompatActivity implements View.OnClickListe
                         new DatePickerDialog(getApplicationContext(), datePickerListener, year, month, day);
                         new TimePickerDialog(getApplicationContext(), timeSetListener, hour, min, true);
                     }
-                    StartDate.setText(selectedYear+ " / " + (selectedMonth + 1) + " / "
+                    StartDate.setText(selectedYear+ " / " + (selectedMonth) + " / "
                             + selectedDay);
                     break;
                 }
@@ -236,7 +235,7 @@ public class MailActivity extends AppCompatActivity implements View.OnClickListe
                         new DatePickerDialog(getApplicationContext(), datePickerListener, year, month, day);
                         new TimePickerDialog(getApplicationContext(), timeSetListener, hour, min, true);
                     }
-                    EndDate.setText(selectedYear+ " / " + (selectedMonth + 1) + " / "
+                    EndDate.setText(selectedYear+ " / " + (selectedMonth) + " / "
                             + selectedDay);
                     break;
                 }
