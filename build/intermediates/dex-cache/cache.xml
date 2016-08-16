@@ -1,3 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="92e35975a3118e7de03973ac2d5792acb1588f01">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c835333be7fd559cffa63c60c5252f9d5e31b26a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_2fee9721ea30234f42325c5232637025f5a250f7\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_25ec6eb33469fc353a84d2de789d6925b8ca8c9d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_6464c6248838716522fe6a87d4356fef847521cf\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="608e96b3b8f5bdceb08bea3a97feca5024f67077">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2cb846d7c66c964436e7e501da68127b14baa8f9\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_15624c05fdf9d08cf3f0f3477d7d0020bcba3e5f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_67757a3a44ff8d52506c7c1b7f0d44342d37f07a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_470331f9f67970c1996a39c42edcec0f4c6ffc0f\classes.dex" />
+    </item>
+    <item
+        jar="M:\Tool\Develop\Android\Gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.9.2\5e3bda828a80c7a21dfbe2308d1755759c2fd7b4\jsoup-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5e3bda828a80c7a21dfbe2308d1755759c2fd7b4">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsoup-1.9.2_e0221e53e35ca2f9f78b8f515957e588af6710bc\classes.dex" />
+    </item>
+    <item
+        jar="M:\Tool\Develop\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_4707ee7c723242c49a00798f1bfa22bfff59cf17\classes.dex" />
+    </item>
+    <item
+        jar="D:\Android\APP\Naver\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\Android\APP\Naver\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_a98096def63951e952cffe31b2efa75c2122b41b\classes.dex" />
+    </item>
+
+</items>

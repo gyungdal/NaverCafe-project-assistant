@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="ImportText">#FF4081</color>
-    <color name="backGround">#80deea</color>
+    <color name="backGround">#e0e0e0</color>
 </resources>

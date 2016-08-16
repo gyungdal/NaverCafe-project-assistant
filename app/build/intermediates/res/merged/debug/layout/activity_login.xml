@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="#5fb0c9"
+    android:background="@color/backGround"
     android:orientation="vertical"
     android:scrollbarAlwaysDrawVerticalTrack="true">
     <TextView
@@ -18,7 +18,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginTop="22dp"
         android:gravity="center_horizontal"
-        android:text="Account Login"
+        android:text=""
         android:textColor="#fff"
         android:textSize="26sp"
         android:textStyle="bold" />
@@ -43,34 +43,23 @@
             android:orientation="vertical"
             android:paddingTop="30dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/id"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/ImportText"
+                    android:background="@drawable/round_edittext_focus"
                     android:singleLine="true"
-                    android:hint="User Name"
+                    android:hint="아이디"
                     android:inputType="textEmailAddress" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
                 <EditText
                     android:id="@+id/pass"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="25dp"
                     android:singleLine="true"
-                    android:drawableTint="@color/ImportText"
-                    android:hint="Password"
+                    android:background="@drawable/round_edittext_focus"
+                    android:hint="비밀번호"
                     android:inputType="textPassword" />
-            </android.support.design.widget.TextInputLayout>
 
 
 
@@ -79,13 +68,15 @@
                 android:id="@+id/login"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="22dp"
-                android:background="#1DDB16"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blue_button"
                 android:textStyle="bold"
-                android:text="Sign in"
+                android:text="로그인"
                 android:textAllCaps="false"
                 android:textColor="#fff"
-                android:textSize="18sp" />
+                android:textSize="20dp" />
         </LinearLayout>
     </RelativeLayout>
 

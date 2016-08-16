@@ -1,8 +1,10 @@
 package com.gyungdal.naver.Activity;
 
+import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -37,9 +39,11 @@ public class InsertCafeActivity extends AppCompatActivity {
     HashMap<String, String> result;
     private static final String TAG = InsertCafeActivity.class.getName();
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimary));
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_insert_cafe);
         esearch = (EditText)findViewById(R.id.searchText);

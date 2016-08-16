@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#5fb0c9"
+    android:background="@color/backGround"
     tools:context=".Activity.CafeActivity">
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -46,9 +46,9 @@
                     android:layout_width="wrap_content"
                     android:layout_weight="0.95"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/ImportText"
+                    android:drawableTint="@color/colorPrimary"
                     android:singleLine="true"
-                    android:hint="Start" />
+                    android:hint="시작 날짜" />
                 <ImageButton
                     android:id="@+id/CafeSetStartDate"
                     android:layout_width="wrap_content"
@@ -70,9 +70,9 @@
                     android:layout_width="wrap_content"
                     android:layout_weight="0.95"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/ImportText"
+                    android:drawableTint="@color/colorPrimary"
                     android:singleLine="true"
-                    android:hint="End" />
+                    android:hint="끝 날짜" />
 
                 <ImageButton
                     android:id="@+id/CafeSetEndDate"
@@ -91,13 +91,10 @@
                     android:id="@+id/testUrl"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/ImportText"
+                    android:drawableTint="@color/colorPrimary"
                     android:singleLine="true"
                     android:hint="INPUT" />
             </android.support.design.widget.TextInputLayout>
-
-
-
 
             <Button
                 android:onClick="click"
@@ -105,11 +102,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
-                android:background="#d67601"
+                android:background="@drawable/blue_button"
                 android:text="Download"
                 android:textAllCaps="false"
                 android:textColor="#fff"
-                android:textSize="18sp" />
+                android:textSize="20dp" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
+
