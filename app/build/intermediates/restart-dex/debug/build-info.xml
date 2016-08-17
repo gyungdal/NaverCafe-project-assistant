@@ -4,7 +4,7 @@
     api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="6172414097951"
+    timestamp="15090906311791"
     token="1987407489020277906" >
 
     <task
@@ -21,18 +21,13 @@
         duration="0" />
 
     <artifact
-        location="D:\Android\APP\Naver\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="D:\Android\APP\Naver\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="5953490038113" >
+    <build timestamp="15090906311791" >
         <artifact
             location="D:\Android\APP\Naver\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="6172414097951" >
-        <artifact
-            location="D:\Android\APP\Naver\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

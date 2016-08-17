@@ -1,12 +1,16 @@
 package com.gyungdal.naver.Activity;
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.os.Build;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,6 +43,7 @@ public class CafeActivity extends AppCompatActivity implements View.OnClickListe
     private TextView StartDate;
     private TextView EndDate;
     protected int select, year, month, day;
+    private int i;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -60,6 +65,7 @@ public class CafeActivity extends AppCompatActivity implements View.OnClickListe
         SetStart.setOnClickListener(this);
         SetEnd.setOnClickListener(this);
         Toast.makeText(getApplicationContext(), Config.CAUTION, Toast.LENGTH_LONG).show();
+        getPermission();
     }
 
     @Override
@@ -84,7 +90,21 @@ public class CafeActivity extends AppCompatActivity implements View.OnClickListe
             default : break;
         }
     }
+    private void getPermission(){
+        if (ContextCompat.checkSelfPermission(CafeActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ) {
 
+            //권한이 없을 경우
+            //최초 권한 요청인지, 혹은 사용자에 의한 재요청인지 확인
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) ) { //사용자가임의로 권한을취소 시킨 경우
+                //권한 재요청
+                Toast.makeText(getApplication(), "파일 권한이 없으면 사용할 수 없습니다.", Toast.LENGTH_SHORT).show();
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, i++);
+                ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            } else {  //최초로 권한을 요청하는 경우(첫실행)
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, i++);
+            }
+        }
+    }
 
     @Override
     public void onResume(){
